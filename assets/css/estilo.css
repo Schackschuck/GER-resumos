@@ -32,6 +32,21 @@ a:hover {
   color: var(--cor-primaria-forte);
 }
 
+::selection {
+  background: color-mix(in srgb, var(--cor-primaria) 24%, transparent);
+  color: inherit;
+}
+
+:root {
+  accent-color: var(--cor-primaria);
+  caret-color: var(--cor-primaria);
+}
+
+::placeholder {
+  color: var(--texto-suave);
+  opacity: 1;
+}
+
 :focus-visible {
   outline: 3px solid var(--cor-primaria);
   outline-offset: 2px;
@@ -86,6 +101,10 @@ h4 {
   top: 8px;
 }
 
+.pular:hover {
+  color: var(--cor-sobre-primaria);
+}
+
 /* ---------- Cabeçalho ---------- */
 
 .topo {
@@ -126,8 +145,8 @@ h4 {
 }
 
 .marca-logo {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
 }
 

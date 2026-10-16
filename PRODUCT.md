@@ -59,8 +59,10 @@ Feito por alunos da própria escola para alunos da própria escola: o conteúdo 
 
 ## Brand Commitments
 
-- **Nome:** GER Resumos. GER significa **Grêmio Estudantil Rosariense**.
-- **Identidade visual oficial:** o grêmio tem logo e cores oficiais, e o site deve segui-los. As cores (`assets/css/tema.css`) e o logo (`assets/img/logo.svg`, `assets/img/icone-*.png`) que estão no código hoje são provisórios e serão trocados pela identidade oficial.
+- **Nome:** GER Resumos. GER significa **Grêmio Estudantil Rosariense**, o grêmio do Marista Rosário.
+- **Identidade visual oficial (o site deve seguir):**
+  - **Cor principal:** o azul-marinho do logo, `#19255a`. Foi tirada da imagem do logo; o grêmio não tem um código oficial diferente.
+  - **Logo:** círculo azul-marinho com "GER" em letras de estilo universitário (brancas, com contorno), dentro de um hexágono com contorno branco, uma faixa cinza com "Grêmio Estudantil" em letra cursiva e "MARISTA ROSÁRIO" embaixo. O arquivo `assets/img/logo.svg` foi redesenhado em vetor a partir da foto de perfil do grêmio, porque o arquivo original não estava disponível; se o original aparecer, ele substitui o redesenho.
 - **Voz (como aparece no site hoje):** português do Brasil, direto, de aluno para aluno ("feito por alunos, para alunos"), e honesto sobre os limites ("os resumos são escritos por estudantes e podem ter erros").
 
 ## Evidence on Hand
