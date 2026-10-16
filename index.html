@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GER Resumos</title>
+  <meta name="description" content="Resumos, questões e dicas para o Ensino Médio, feitos por alunos para alunos.">
+  <meta name="theme-color" content="#3b4cca" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icone-192.png">
+  <link rel="stylesheet" href="assets/css/tema.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <script>
+    // Aplica o tema antes de desenhar a página, para não piscar branco no modo escuro.
+    (function () {
+      var tema = null;
+      try { tema = localStorage.getItem('ger-resumos:tema'); } catch (e) {}
+      if (tema !== 'claro' && tema !== 'escuro') {
+        tema = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      }
+      document.documentElement.dataset.tema = tema;
+    })();
+  </script>
+  <script src="assets/vendor/marked.umd.js" defer></script>
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="marca" href="#/" aria-label="GER Resumos, página inicial">
+        <img class="marca-logo" src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span class="marca-nome">GER Resumos</span>
+      </a>
+      <form class="busca-topo" role="search" data-busca>
+        <label class="sr-only" for="busca-topo">Buscar nos resumos</label>
+        <input id="busca-topo" type="search" name="q" placeholder="Buscar…" autocomplete="off">
+      </form>
+      <button id="botao-tema" class="botao-icone" type="button" aria-pressed="false" aria-label="Usar tema escuro">
+        <svg class="icone-lua" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 14.5A8.5 8.5 0 0 1 9.5 3a.5.5 0 0 0-.6-.6A10 10 0 1 0 21.6 15.1a.5.5 0 0 0-.6-.6Z"/></svg>
+        <svg class="icone-sol" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></svg>
+      </button>
+    </div>
+    <nav class="navegacao" aria-label="Principal">
+      <a href="#/ano/1">1º ano</a>
+      <a href="#/ano/2">2º ano</a>
+      <a href="#/ano/3">3º ano</a>
+      <a href="#/formulas">Fórmulas</a>
+      <a href="#/revisar">Onde estudar mais <span id="contador-revisar" class="contador" hidden></span></a>
+    </nav>
+  </header>
+
+  <div id="aviso-offline" class="aviso-offline" role="status" hidden>
+    Você está sem internet. Mostrando o conteúdo salvo neste aparelho.
+  </div>
+
+  <main id="conteudo-principal" class="principal" tabindex="-1">
+    <p class="carregando">Carregando…</p>
+  </main>
+
+  <noscript>
+    <p class="vazio">Este site precisa de JavaScript ligado para funcionar.</p>
+  </noscript>
+
+  <footer class="rodape">
+    <p><strong>GER Resumos</strong> · feito por alunos, para alunos, pelo Grêmio Estudantil.</p>
+    <p>Os resumos são escritos por estudantes e podem ter erros: confira sempre com o material das aulas. Achou um erro? Avise o grêmio.</p>
+  </footer>
+</body>
+</html>

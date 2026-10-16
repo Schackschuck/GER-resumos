@@ -1,0 +1,69 @@
+/*
+  CORES DO SITE — é só mudar aqui.
+  Estas cores são PROVISÓRIAS, até o grêmio definir as cores oficiais.
+  Cada cor aparece duas vezes: no tema claro (:root) e no tema escuro ([data-tema="escuro"]).
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Cor principal (botões, links, destaques) */
+  --cor-primaria: #3b4cca;
+  --cor-primaria-forte: #2c3aa3;   /* botão com o mouse em cima */
+  --cor-primaria-suave: #e9ecfb;   /* fundos claros com a cor principal */
+  --cor-sobre-primaria: #ffffff;   /* texto em cima da cor principal */
+
+  /* Fundo, superfícies e texto */
+  --fundo: #f6f7fb;
+  --superficie: #ffffff;
+  --superficie-2: #eef1f7;
+  --borda: #dce1ea;
+  --texto: #1a1f2b;
+  --texto-suave: #556070;
+
+  /* Certo, errado e aviso (questões) */
+  --sucesso: #1b7f4f;
+  --sucesso-suave: #e2f4ea;
+  --erro: #c2352b;
+  --erro-suave: #fbe8e6;
+  --aviso: #8a5a00;
+  --aviso-suave: #fff3d4;
+
+  /* Uma cor para cada área do conhecimento */
+  --area-matematica: #d9480f;
+  --area-natureza: #2b8a3e;
+  --area-linguagens: #1971c2;
+  --area-humanas: #a61e4d;
+
+  --sombra: 0 1px 2px rgb(16 24 40 / 6%), 0 2px 8px rgb(16 24 40 / 6%);
+}
+
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+
+  --cor-primaria: #8f9cff;
+  --cor-primaria-forte: #b0b9ff;
+  --cor-primaria-suave: #222749;
+  --cor-sobre-primaria: #0e1120;
+
+  --fundo: #0f1218;
+  --superficie: #171b23;
+  --superficie-2: #1f2430;
+  --borda: #2d3443;
+  --texto: #e6e9ef;
+  --texto-suave: #a3abbb;
+
+  --sucesso: #5ccf95;
+  --sucesso-suave: #12301f;
+  --erro: #ff8277;
+  --erro-suave: #3b1b19;
+  --aviso: #f2c14e;
+  --aviso-suave: #33290f;
+
+  --area-matematica: #ff9b5e;
+  --area-natureza: #6bd17f;
+  --area-linguagens: #74b9fc;
+  --area-humanas: #f589b0;
+
+  --sombra: 0 1px 2px rgb(0 0 0 / 40%);
+}
