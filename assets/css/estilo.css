@@ -113,6 +113,7 @@ h4 {
   z-index: 10;
   background: var(--superficie);
   border-bottom: 1px solid var(--borda);
+  box-shadow: var(--sombra-topo);
 }
 
 .topo-linha,
@@ -334,12 +335,13 @@ textarea:focus {
   color: var(--texto);
   text-decoration: none;
   box-shadow: var(--sombra);
-  transition: border-color 0.15s, transform 0.15s;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
 .cartao:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
   transform: translateY(-1px);
 }
 
@@ -498,11 +500,13 @@ textarea:focus {
   color: var(--texto);
   text-decoration: none;
   box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .capitulo-item:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .capitulo-numero {
@@ -557,6 +561,7 @@ textarea:focus {
   background: var(--superficie);
   border: 1px solid var(--borda);
   border-radius: 14px;
+  box-shadow: var(--sombra);
 }
 
 @media (min-width: 720px) {
@@ -817,6 +822,7 @@ textarea:focus {
   background: var(--superficie);
   border: 1px solid var(--borda);
   border-radius: 12px;
+  box-shadow: var(--sombra);
   break-inside: avoid;
 }
 
@@ -1223,6 +1229,7 @@ textarea:focus {
   border: 1px solid var(--borda);
   border-left: 4px solid var(--cor-area, var(--erro));
   border-radius: 12px;
+  box-shadow: var(--sombra);
 }
 
 .lista-revisar-grande .lista-revisar-info::before {
@@ -1254,6 +1261,8 @@ textarea:focus {
   color: var(--texto);
   font-weight: 600;
   text-decoration: none;
+  box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .vizinho span {
@@ -1265,6 +1274,7 @@ textarea:focus {
 .vizinho:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .vizinho-proximo {
@@ -1297,11 +1307,14 @@ textarea:focus {
   border-radius: 12px;
   color: var(--texto);
   text-decoration: none;
+  box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .resultado-busca:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .resultado-busca-onde {

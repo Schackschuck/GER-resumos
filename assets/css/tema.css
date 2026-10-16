@@ -35,7 +35,10 @@
   --area-linguagens: #1971c2;
   --area-humanas: #a61e4d;
 
-  --sombra: 0 1px 2px rgb(16 24 40 / 6%), 0 2px 8px rgb(16 24 40 / 6%);
+  /* Sombras em camadas: repouso (superfícies), elevada (mouse em cima) e topo fixo */
+  --sombra: 0 1px 2px rgb(25 37 90 / 8%), 0 4px 14px rgb(25 37 90 / 10%);
+  --sombra-elevada: 0 4px 8px rgb(25 37 90 / 10%), 0 16px 32px rgb(25 37 90 / 16%);
+  --sombra-topo: 0 1px 3px rgb(25 37 90 / 6%), 0 6px 18px rgb(25 37 90 / 7%);
 }
 
 /* No escuro, o fundo é um marinho bem fechado e a cor principal vira um azul claro
@@ -67,5 +70,7 @@
   --area-linguagens: #74b9fc;
   --area-humanas: #f589b0;
 
-  --sombra: 0 1px 2px rgb(0 0 0 / 40%);
+  --sombra: 0 1px 2px rgb(0 0 0 / 45%), 0 6px 16px rgb(0 0 0 / 40%);
+  --sombra-elevada: 0 4px 8px rgb(0 0 0 / 45%), 0 18px 36px rgb(0 0 0 / 55%);
+  --sombra-topo: 0 1px 3px rgb(0 0 0 / 40%), 0 6px 18px rgb(0 0 0 / 35%);
 }
