@@ -7,6 +7,7 @@ Site de resumos e questões para o Ensino Médio, feito pelo Grêmio Estudantil.
 ## O que o site tem
 
 - **Navegação por ano e área:** 1º, 2º e 3º ano → Matemática, Ciências da Natureza (Biologia, Química, Física), Linguagens (Língua Portuguesa, Redação, Literatura) e Ciências Humanas (História, Geografia, Sociologia, Filosofia).
+- **Página Resumos:** todos os capítulos já escritos numa página só, separados por ano e matéria. A barra do topo tem só Início, Resumos e Onde estudar mais; a folha de fórmulas e as páginas "Como é o ano" ficam na página inicial.
 - **Capítulos com tópicos principais no início:** uma lista com links para cada seção, gerada a partir dos títulos, e os pontos-chave para revisar rápido.
 - **Vídeos junto com o texto** (YouTube).
 - **Questões objetivas:** o aluno clica numa alternativa e vê na hora se acertou, com a explicação.
@@ -41,12 +42,12 @@ Depois, abra <http://localhost:8000>.
 
 O arquivo `.nojekyll` faz o GitHub publicar os arquivos exatamente como estão.
 
-## Trocar as cores e o logo
+## Cores e logo
 
-As cores e o logo atuais são **provisórios**.
+O site usa a identidade do grêmio: o **azul-marinho do logo (`#19255a`)** é a cor principal.
 
-- **Cores:** todas ficam em [`assets/css/tema.css`](assets/css/tema.css), uma vez para o tema claro e outra para o escuro. Também atualize `theme_color` em `manifest.webmanifest` e a `<meta name="theme-color">` no `index.html`.
-- **Logo:** substitua `assets/img/logo.svg` (aparece no topo e na aba do navegador) e os ícones `assets/img/icone-192.png` e `assets/img/icone-512.png` (usados quando o site é instalado no celular).
+- **Cores:** todas ficam em [`assets/css/tema.css`](assets/css/tema.css), uma vez para o tema claro e outra para o escuro. Se mudar alguma, também atualize `theme_color` em `manifest.webmanifest` e a `<meta name="theme-color">` no `index.html`.
+- **Logo:** `assets/img/logo.svg` (aparece no topo e na aba do navegador) foi **redesenhado em vetor a partir da foto de perfil do grêmio**, então pode ter pequenas diferenças do original. Se o grêmio tiver o arquivo original, substitua esse arquivo (mesmo nome) e gere de novo os ícones `assets/img/icone-192.png` e `assets/img/icone-512.png` (usados quando o site é instalado no celular): o logo sobre um quadrado azul-marinho, com 192 × 192 e 512 × 512 pixels.
 
 ## Estrutura
 

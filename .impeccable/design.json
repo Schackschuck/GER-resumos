@@ -1,0 +1,809 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T17:21:07+00:00",
+  "title": "Design System: GER Resumos",
+  "extensions": {
+    "colorMeta": {
+      "cor-primaria": {
+        "role": "primary",
+        "displayName": "Marinho do Grêmio",
+        "canonical": "oklch(28.9% 0.096 269.8)",
+        "tonalRamp": [
+          "#030133",
+          "#131d52",
+          "#2c3b72",
+          "#485a94",
+          "#697dba",
+          "#8da2e2",
+          "#b6c9ff",
+          "#e8eefe"
+        ]
+      },
+      "cor-primaria-forte": {
+        "role": "primary",
+        "displayName": "Marinho Aceso",
+        "canonical": "oklch(39.2% 0.134 270.5)",
+        "tonalRamp": [
+          "#040033",
+          "#101463",
+          "#273685",
+          "#4256a8",
+          "#627ad0",
+          "#859ff8",
+          "#b7c9fe",
+          "#e9eefe"
+        ]
+      },
+      "cor-primaria-suave": {
+        "role": "primary",
+        "displayName": "Névoa Marinha",
+        "canonical": "oklch(93.6% 0.015 277.8)",
+        "tonalRamp": [
+          "#0a0b11",
+          "#22232b",
+          "#3e3f48",
+          "#5b5d66",
+          "#7e8089",
+          "#a2a4ae",
+          "#c8cad4",
+          "#eceef9"
+        ]
+      },
+      "cor-sobre-primaria": {
+        "role": "primary",
+        "displayName": "Branco sobre Marinho",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "fundo": {
+        "role": "neutral",
+        "displayName": "Papel Frio",
+        "canonical": "oklch(97.4% 0.005 275.0)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232427",
+          "#3f4043",
+          "#5d5d61",
+          "#7f8083",
+          "#a3a4a8",
+          "#c9cace",
+          "#edeef2"
+        ]
+      },
+      "superficie": {
+        "role": "neutral",
+        "displayName": "Folha",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "superficie-2": {
+        "role": "neutral",
+        "displayName": "Folha Sombreada",
+        "canonical": "oklch(95.0% 0.010 273.4)",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#222429",
+          "#3e3f45",
+          "#5c5d63",
+          "#7e8086",
+          "#a2a4ab",
+          "#c8cad1",
+          "#eceef5"
+        ]
+      },
+      "borda": {
+        "role": "neutral",
+        "displayName": "Linha de Caderno",
+        "canonical": "oklch(89.5% 0.017 271.2)",
+        "tonalRamp": [
+          "#090b12",
+          "#21242c",
+          "#3c3f49",
+          "#5a5d68",
+          "#7c808b",
+          "#a0a4b0",
+          "#c6cad6",
+          "#eaeefa"
+        ]
+      },
+      "texto": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "oklch(23.0% 0.032 270.4)",
+        "tonalRamp": [
+          "#060a19",
+          "#1e2334",
+          "#393f51",
+          "#575d70",
+          "#798094",
+          "#9da4b9",
+          "#c2cae0",
+          "#e9eefe"
+        ]
+      },
+      "texto-suave": {
+        "role": "neutral",
+        "displayName": "Tinta Clara",
+        "canonical": "oklch(47.0% 0.040 270.4)",
+        "tonalRamp": [
+          "#06091c",
+          "#1d2338",
+          "#373f55",
+          "#555d75",
+          "#777f99",
+          "#9ba4bf",
+          "#c0cae6",
+          "#e9eefe"
+        ]
+      },
+      "sucesso": {
+        "role": "tertiary",
+        "displayName": "Verde Acertou",
+        "canonical": "oklch(52.9% 0.117 156.8)",
+        "tonalRamp": [
+          "#001005",
+          "#012c18",
+          "#004d2c",
+          "#007042",
+          "#379563",
+          "#60ba87",
+          "#87e2ac",
+          "#c5ffda"
+        ]
+      },
+      "sucesso-suave": {
+        "role": "tertiary",
+        "displayName": "Fundo Acertou",
+        "canonical": "oklch(95.1% 0.023 161.7)",
+        "tonalRamp": [
+          "#030e08",
+          "#1a2821",
+          "#35443c",
+          "#52625a",
+          "#75857c",
+          "#98a9a0",
+          "#becfc6",
+          "#e2f4ea"
+        ]
+      },
+      "erro": {
+        "role": "tertiary",
+        "displayName": "Vermelho Errou",
+        "canonical": "oklch(54.3% 0.179 28.6)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0101",
+          "#7d0002",
+          "#ac1c16",
+          "#d6493c",
+          "#ff7363",
+          "#ffb5aa",
+          "#fee9e6"
+        ]
+      },
+      "erro-suave": {
+        "role": "tertiary",
+        "displayName": "Fundo Errou",
+        "canonical": "oklch(94.6% 0.021 24.8)",
+        "tonalRamp": [
+          "#130807",
+          "#2e201f",
+          "#4a3c3a",
+          "#695958",
+          "#8c7c7a",
+          "#b2a09e",
+          "#d8c6c4",
+          "#fce9e7"
+        ]
+      },
+      "aviso": {
+        "role": "tertiary",
+        "displayName": "Âmbar Atenção",
+        "canonical": "oklch(50.8% 0.108 73.3)",
+        "tonalRamp": [
+          "#130900",
+          "#331f01",
+          "#583801",
+          "#805300",
+          "#a7752b",
+          "#cd9a53",
+          "#f5c079",
+          "#ffebd3"
+        ]
+      },
+      "aviso-suave": {
+        "role": "tertiary",
+        "displayName": "Fundo Atenção",
+        "canonical": "oklch(96.6% 0.042 89.4)",
+        "tonalRamp": [
+          "#100a00",
+          "#2c2309",
+          "#493f25",
+          "#675d42",
+          "#8a7f63",
+          "#afa487",
+          "#d5caac",
+          "#faeecf"
+        ]
+      },
+      "area-matematica": {
+        "role": "tertiary",
+        "displayName": "Laranja Matemática",
+        "canonical": "oklch(60.0% 0.190 37.9)",
+        "tonalRamp": [
+          "#1c0300",
+          "#440f00",
+          "#712001",
+          "#a23102",
+          "#d9480f",
+          "#ff754a",
+          "#ffb6a0",
+          "#fee9e3"
+        ]
+      },
+      "area-natureza": {
+        "role": "tertiary",
+        "displayName": "Verde Natureza",
+        "canonical": "oklch(56.0% 0.143 146.9)",
+        "tonalRamp": [
+          "#001002",
+          "#012d0a",
+          "#024e18",
+          "#017226",
+          "#39964a",
+          "#61bc6e",
+          "#88e493",
+          "#caffce"
+        ]
+      },
+      "area-linguagens": {
+        "role": "tertiary",
+        "displayName": "Azul Linguagens",
+        "canonical": "oklch(54.3% 0.149 251.7)",
+        "tonalRamp": [
+          "#000b1d",
+          "#002447",
+          "#014076",
+          "#035ea9",
+          "#3083d5",
+          "#57a9fe",
+          "#a4cffe",
+          "#e3f0ff"
+        ]
+      },
+      "area-humanas": {
+        "role": "tertiary",
+        "displayName": "Vinho Humanas",
+        "canonical": "oklch(48.0% 0.172 6.8)",
+        "tonalRamp": [
+          "#1e0007",
+          "#49001b",
+          "#790132",
+          "#a61e4d",
+          "#d0496f",
+          "#fa7092",
+          "#feb2c1",
+          "#ffe8eb"
+        ]
+      },
+      "cor-primaria-escuro": {
+        "role": "primary",
+        "displayName": "Azul Lavanda",
+        "canonical": "oklch(77.7% 0.096 274.7)",
+        "tonalRamp": [
+          "#060032",
+          "#181c51",
+          "#323971",
+          "#4e5893",
+          "#6f7bb9",
+          "#93a0e1",
+          "#bbc7fe",
+          "#e9eeff"
+        ]
+      },
+      "cor-primaria-forte-escuro": {
+        "role": "primary",
+        "displayName": "Marinho Aceso (escuro)",
+        "canonical": "oklch(85.8% 0.061 274.8)",
+        "tonalRamp": [
+          "#060624",
+          "#1c2141",
+          "#363d60",
+          "#535b80",
+          "#757ea5",
+          "#99a2cb",
+          "#bec8f3",
+          "#eaeefe"
+        ]
+      },
+      "cor-primaria-suave-escuro": {
+        "role": "primary",
+        "displayName": "Névoa Marinha (escuro)",
+        "canonical": "oklch(30.1% 0.087 271.4)",
+        "tonalRamp": [
+          "#04022f",
+          "#161e4d",
+          "#2f3b6d",
+          "#4c5a8f",
+          "#6d7db5",
+          "#91a2dc",
+          "#b8c8ff",
+          "#e9eefe"
+        ]
+      },
+      "cor-sobre-primaria-escuro": {
+        "role": "primary",
+        "displayName": "Branco sobre Marinho (escuro)",
+        "canonical": "oklch(19.4% 0.062 271.2)",
+        "tonalRamp": [
+          "#040725",
+          "#192142",
+          "#343e61",
+          "#515c81",
+          "#727fa6",
+          "#96a3cc",
+          "#bbc9f4",
+          "#e9eefe"
+        ]
+      },
+      "fundo-escuro": {
+        "role": "neutral",
+        "displayName": "Marinho Noturno",
+        "canonical": "oklch(19.4% 0.062 271.2)",
+        "tonalRamp": [
+          "#040725",
+          "#192142",
+          "#343e61",
+          "#515c81",
+          "#727fa6",
+          "#96a3cc",
+          "#bbc9f4",
+          "#e9eefe"
+        ]
+      },
+      "superficie-escuro": {
+        "role": "neutral",
+        "displayName": "Marinho de Mesa",
+        "canonical": "oklch(23.2% 0.066 270.5)",
+        "tonalRamp": [
+          "#040626",
+          "#182144",
+          "#323d63",
+          "#4f5c83",
+          "#717ea8",
+          "#95a3cf",
+          "#bac9f7",
+          "#e9eefe"
+        ]
+      },
+      "superficie-2-escuro": {
+        "role": "neutral",
+        "displayName": "Folha Sombreada (escuro)",
+        "canonical": "oklch(27.0% 0.070 270.8)",
+        "tonalRamp": [
+          "#040628",
+          "#182145",
+          "#323d65",
+          "#4f5b85",
+          "#707eaa",
+          "#94a3d1",
+          "#b9c9f9",
+          "#e8eeff"
+        ]
+      },
+      "borda-escuro": {
+        "role": "neutral",
+        "displayName": "Linha de Caderno (escuro)",
+        "canonical": "oklch(34.2% 0.083 272.3)",
+        "tonalRamp": [
+          "#04032d",
+          "#171f4b",
+          "#313c6b",
+          "#4d5a8d",
+          "#6f7db2",
+          "#92a2d9",
+          "#b8c8ff",
+          "#e9eeff"
+        ]
+      },
+      "texto-escuro": {
+        "role": "neutral",
+        "displayName": "Tinta (escuro)",
+        "canonical": "oklch(93.5% 0.014 277.1)",
+        "tonalRamp": [
+          "#0a0b11",
+          "#22242b",
+          "#3e3f47",
+          "#5b5d65",
+          "#7e8089",
+          "#a2a4ad",
+          "#c8cad4",
+          "#eceef8"
+        ]
+      },
+      "texto-suave-escuro": {
+        "role": "neutral",
+        "displayName": "Tinta Clara (escuro)",
+        "canonical": "oklch(75.5% 0.042 274.6)",
+        "tonalRamp": [
+          "#07091d",
+          "#1e2238",
+          "#393e56",
+          "#565c76",
+          "#787f9a",
+          "#9ca3c0",
+          "#c2c9e7",
+          "#eaeefe"
+        ]
+      },
+      "sucesso-escuro": {
+        "role": "tertiary",
+        "displayName": "Verde Acertou (escuro)",
+        "canonical": "oklch(77.3% 0.135 158.8)",
+        "tonalRamp": [
+          "#000f06",
+          "#012c19",
+          "#014d2f",
+          "#057046",
+          "#0f9861",
+          "#49be85",
+          "#73e5aa",
+          "#c4ffdc"
+        ]
+      },
+      "sucesso-suave-escuro": {
+        "role": "tertiary",
+        "displayName": "Fundo Acertou (escuro)",
+        "canonical": "oklch(28.0% 0.048 156.5)",
+        "tonalRamp": [
+          "#000f05",
+          "#0d2b1a",
+          "#294735",
+          "#476652",
+          "#698975",
+          "#8dae98",
+          "#b2d4be",
+          "#d5f9e1"
+        ]
+      },
+      "erro-escuro": {
+        "role": "tertiary",
+        "displayName": "Vermelho Errou (escuro)",
+        "canonical": "oklch(74.6% 0.154 26.6)",
+        "tonalRamp": [
+          "#1f0001",
+          "#4b0003",
+          "#7c010a",
+          "#a32e2a",
+          "#cc544c",
+          "#f67a6f",
+          "#feb5ad",
+          "#fee9e6"
+        ]
+      },
+      "erro-suave-escuro": {
+        "role": "tertiary",
+        "displayName": "Fundo Errou (escuro)",
+        "canonical": "oklch(26.7% 0.051 24.8)",
+        "tonalRamp": [
+          "#1c0202",
+          "#391917",
+          "#583532",
+          "#78534f",
+          "#9d7571",
+          "#c39995",
+          "#eabeba",
+          "#ffe9e6"
+        ]
+      },
+      "aviso-escuro": {
+        "role": "tertiary",
+        "displayName": "Âmbar Atenção (escuro)",
+        "canonical": "oklch(83.4% 0.141 85.4)",
+        "tonalRamp": [
+          "#110a00",
+          "#302200",
+          "#523c01",
+          "#765803",
+          "#a17908",
+          "#cc9d1c",
+          "#f4c350",
+          "#ffedc7"
+        ]
+      },
+      "aviso-suave-escuro": {
+        "role": "tertiary",
+        "displayName": "Fundo Atenção (escuro)",
+        "canonical": "oklch(28.6% 0.043 88.4)",
+        "tonalRamp": [
+          "#100a00",
+          "#2d2308",
+          "#493f24",
+          "#685d41",
+          "#8b7f63",
+          "#b0a486",
+          "#d6caab",
+          "#faeece"
+        ]
+      },
+      "area-matematica-escuro": {
+        "role": "tertiary",
+        "displayName": "Laranja Matemática (escuro)",
+        "canonical": "oklch(78.1% 0.142 50.8)",
+        "tonalRamp": [
+          "#180600",
+          "#3d1800",
+          "#662d01",
+          "#924403",
+          "#c16320",
+          "#ea884a",
+          "#ffb890",
+          "#ffeade"
+        ]
+      },
+      "area-natureza-escuro": {
+        "role": "tertiary",
+        "displayName": "Verde Natureza (escuro)",
+        "canonical": "oklch(77.9% 0.150 148.4)",
+        "tonalRamp": [
+          "#001003",
+          "#002d0d",
+          "#024e1d",
+          "#03712d",
+          "#2c9849",
+          "#57be6d",
+          "#7fe592",
+          "#c8ffcf"
+        ]
+      },
+      "area-linguagens-escuro": {
+        "role": "tertiary",
+        "displayName": "Azul Linguagens (escuro)",
+        "canonical": "oklch(76.7% 0.120 249.0)",
+        "tonalRamp": [
+          "#000c1c",
+          "#002545",
+          "#014272",
+          "#17619d",
+          "#4085c4",
+          "#65aaec",
+          "#a1d0fe",
+          "#e3f0fe"
+        ]
+      },
+      "area-humanas-escuro": {
+        "role": "tertiary",
+        "displayName": "Vinho Humanas (escuro)",
+        "canonical": "oklch(75.7% 0.138 357.9)",
+        "tonalRamp": [
+          "#1d000b",
+          "#470024",
+          "#730f40",
+          "#97345d",
+          "#bf5980",
+          "#e87da4",
+          "#feb1ca",
+          "#fee8ee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Só o título da página inicial."
+      },
+      "headline": {
+        "displayName": "Título da página",
+        "purpose": "Título de cada página: capítulo, ano, matéria."
+      },
+      "title": {
+        "displayName": "Seção",
+        "purpose": "Seções do resumo (##)."
+      },
+      "body": {
+        "displayName": "Corpo",
+        "purpose": "Texto da interface, questões e cartões."
+      },
+      "body-leitura": {
+        "displayName": "Leitura",
+        "purpose": "Texto dos resumos, em colunas de até 48rem."
+      },
+      "label": {
+        "displayName": "Rótulo",
+        "purpose": "Rótulos curtos em maiúsculas: Tópicos principais, Pontos-chave, nome da matéria."
+      },
+      "formula": {
+        "displayName": "Fórmula",
+        "purpose": "Expressões da folha de fórmulas."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Só o texto do pedido de correção por IA."
+      }
+    },
+    "shadows": [
+      {
+        "name": "repouso",
+        "value": "0 1px 2px rgb(25 37 90 / 8%), 0 4px 14px rgb(25 37 90 / 10%)",
+        "valueDark": "0 1px 2px rgb(0 0 0 / 45%), 0 6px 16px rgb(0 0 0 / 40%)",
+        "purpose": "Toda superfície de conteúdo sobre o fundo (--sombra)."
+      },
+      {
+        "name": "elevada",
+        "value": "0 4px 8px rgb(25 37 90 / 10%), 0 16px 32px rgb(25 37 90 / 16%)",
+        "valueDark": "0 4px 8px rgb(0 0 0 / 45%), 0 18px 36px rgb(0 0 0 / 55%)",
+        "purpose": "Só com o mouse em cima de algo clicável (--sombra-elevada)."
+      },
+      {
+        "name": "topo",
+        "value": "0 1px 3px rgb(25 37 90 / 6%), 0 6px 18px rgb(25 37 90 / 7%)",
+        "valueDark": "0 1px 3px rgb(0 0 0 / 40%), 0 6px 18px rgb(0 0 0 / 35%)",
+        "purpose": "Cabeçalho fixo (--sombra-topo)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "mudanca-de-estado",
+        "value": "0.15s ease",
+        "purpose": "Borda, sombra e o deslocamento de 1px dos cartões no hover. Desligado com prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "muito-estreito",
+        "value": "359px"
+      },
+      {
+        "name": "celular",
+        "value": "560px"
+      },
+      {
+        "name": "capitulo-duas-colunas",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de um bloco, como Buscar ou Corrigir com IA.",
+      "html": "<button class=\"ds-botao\">Corrigir com IA</button>",
+      "css": ".ds-botao { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border: 1px solid var(--cor-primaria); border-radius: 10px; background: var(--cor-primaria); color: var(--cor-sobre-primaria); font: 600 1rem/1.2 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; cursor: pointer; } .ds-botao:hover { border-color: var(--cor-primaria-forte); background: var(--cor-primaria-forte); } .ds-botao:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação de apoio ao lado da principal, como Ver resposta esperada.",
+      "html": "<button class=\"ds-botao-secundario\">Ver resposta esperada</button>",
+      "css": ".ds-botao-secundario { display: inline-flex; align-items: center; padding: 10px 16px; border: 1px solid var(--cor-primaria); border-radius: 10px; background: var(--superficie); color: var(--cor-primaria); font: 600 1rem/1.2 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; cursor: pointer; } .ds-botao-secundario:hover { background: var(--cor-primaria-suave); color: var(--cor-primaria-forte); } .ds-botao-secundario:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }"
+    },
+    {
+      "name": "Campo de busca",
+      "kind": "input",
+      "refersTo": "input-busca",
+      "description": "Busca do topo e da página inicial.",
+      "html": "<input class=\"ds-busca\" type=\"search\" placeholder=\"Ex.: mitocôndria, Bhaskara\">",
+      "css": ".ds-busca { width: 100%; max-width: 420px; padding: 8px 12px; border: 1px solid var(--borda); border-radius: 10px; background: var(--fundo); color: var(--texto); font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; caret-color: var(--cor-primaria); } .ds-busca::placeholder { color: var(--texto-suave); opacity: 1; } .ds-busca:focus { border-color: var(--cor-primaria); outline: 2px solid var(--cor-primaria-suave); outline-offset: 0; }"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Links principais em pílulas; a página atual fica destacada.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">1º ano</a><a href=\"#\">2º ano</a><a href=\"#\">3º ano</a><a href=\"#\">Fórmulas</a><a href=\"#\">Onde estudar mais <span class=\"ds-contador\">2</span></a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-nav a { display: inline-flex; flex-shrink: 0; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; white-space: nowrap; color: var(--texto-suave); text-decoration: none; font-size: 0.95rem; font-weight: 550; } .ds-nav a:hover { background: var(--superficie-2); color: var(--texto); } .ds-nav a[aria-current=\"page\"] { background: var(--cor-primaria-suave); color: var(--cor-primaria); } .ds-nav a:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; } .ds-contador { min-width: 20px; padding: 0 6px; border-radius: 999px; background: var(--erro); color: var(--superficie); font-size: 0.75rem; font-weight: 700; line-height: 20px; text-align: center; }"
+    },
+    {
+      "name": "Cartão de matéria",
+      "kind": "card",
+      "refersTo": "cartao",
+      "description": "Link para uma matéria ou capítulo; a faixa mostra a área e o cartão sobe com o mouse em cima.",
+      "html": "<a class=\"ds-cartao\" href=\"#\"><span class=\"ds-cartao-titulo\">Matemática</span><span class=\"ds-cartao-texto\">1 resumo</span></a>",
+      "css": ".ds-cartao { display: flex; flex-direction: column; gap: 4px; max-width: 240px; padding: 16px 18px; background: var(--superficie); border: 1px solid var(--borda); border-left: 4px solid var(--area-matematica); border-radius: 14px; color: var(--texto); text-decoration: none; box-shadow: var(--sombra); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; } .ds-cartao:hover { border-color: var(--cor-primaria); border-left-color: var(--area-matematica); box-shadow: var(--sombra-elevada); transform: translateY(-1px); } .ds-cartao:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; } .ds-cartao-titulo { font-weight: 650; font-size: 1.05rem; line-height: 1.3; } .ds-cartao-texto { color: var(--texto-suave); font-size: 0.92rem; line-height: 1.45; }"
+    },
+    {
+      "name": "Alternativa de questão",
+      "kind": "custom",
+      "refersTo": "alternativa",
+      "description": "Alternativa clicável de questão objetiva, com os estados de certo e errado.",
+      "html": "<div class=\"ds-alternativas\"><button class=\"ds-alt\"><span class=\"ds-alt-letra\">A</span>R$ 24,00</button><button class=\"ds-alt ds-alt-certa\"><span class=\"ds-alt-letra\">B</span>R$ 30,00</button><button class=\"ds-alt ds-alt-errada\"><span class=\"ds-alt-letra\">C</span>R$ 27,00</button></div>",
+      "css": ".ds-alternativas { display: grid; gap: 8px; max-width: 420px; } .ds-alt { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 14px; background: var(--fundo); border: 1px solid var(--borda); border-radius: 10px; color: var(--texto); font: 400 1rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; text-align: left; cursor: pointer; } .ds-alt:hover { border-color: var(--cor-primaria); background: var(--cor-primaria-suave); } .ds-alt:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; } .ds-alt-letra { display: grid; place-items: center; width: 26px; height: 26px; flex-shrink: 0; border: 1px solid var(--borda); border-radius: 50%; background: var(--superficie); font-size: 0.85rem; font-weight: 700; } .ds-alt-certa, .ds-alt-certa:hover { border-color: var(--sucesso); background: var(--sucesso-suave); } .ds-alt-certa .ds-alt-letra { border-color: var(--sucesso); background: var(--sucesso); color: var(--superficie); } .ds-alt-errada, .ds-alt-errada:hover { border-color: var(--erro); background: var(--erro-suave); } .ds-alt-errada .ds-alt-letra { border-color: var(--erro); background: var(--erro); color: var(--superficie); }"
+    },
+    {
+      "name": "Caixa de dica",
+      "kind": "custom",
+      "refersTo": "caixa-dica",
+      "description": "Bloco ```dica do resumo; a de atenção usa as cores de aviso.",
+      "html": "<div class=\"ds-caixa\"><p class=\"ds-caixa-rotulo\">Dica</p><p>Em problemas do dia a dia, o <strong>b</strong> costuma ser o valor fixo.</p></div>",
+      "css": ".ds-caixa { max-width: 48rem; padding: 14px 18px; border-left: 4px solid var(--cor-primaria); border-radius: 10px; background: var(--cor-primaria-suave); color: var(--texto); font: 400 1.05rem/1.7 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-caixa p { margin: 0; } .ds-caixa .ds-caixa-rotulo { margin: 0 0 4px; font-weight: 700; font-size: 0.92rem; }"
+    },
+    {
+      "name": "Selo de tipo",
+      "kind": "chip",
+      "description": "Mostra o tipo da questão no cabeçalho dela.",
+      "html": "<span class=\"ds-selo\">Objetiva</span>",
+      "css": ".ds-selo { display: inline-block; padding: 1px 8px; border-radius: 999px; background: var(--superficie-2); color: var(--texto-suave); font: 600 0.8rem/1.6 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Sala de Estudo",
+    "overview": "O GER Resumos é um lugar calmo para estudar. Quem abre o site quer revisar um capítulo, fazer questões ou saber como é o próximo ano, e o design existe para não atrapalhar: o conteúdo ocupa o centro, a leitura é confortável e nada disputa a atenção com o texto. A sensação é de calma e foco, e também de confiança e organização: é material de estudo sério, mesmo sendo escrito por estudantes.\n\nO grêmio aparece na medida certa. O logo (o escudo com \"GER\" em letras universitárias, a faixa \"Grêmio Estudantil\" e \"Marista Rosário\") fica no topo, e o **Marinho do Grêmio** é a única cor da marca: está nos botões, nos links e no que está selecionado. O resto é neutro, levemente azulado, para combinar com o marinho. A profundidade é em camadas: o fundo, as superfícies com conteúdo e, por cima, o que é clicável quando o mouse passa. Os componentes são firmes e simples, com formas claras, cantos levemente arredondados e ações óbvias.\n\nO site **não** deve parecer um portal escolar burocrático (cheio de menus e tabelas cinzas), nem um app gamificado (medalhas, confete, pontos, cores berrantes), nem uma rede social (feed infinito, curtidas, notificações chamando atenção).",
+    "keyCharacteristics": [
+      "Conteúdo primeiro: colunas de leitura com no máximo 48rem e texto corrido a 1.05rem.",
+      "Uma única cor de marca (o Marinho do Grêmio) para ação e seleção; o resto é neutro.",
+      "Cores por área do conhecimento, usadas só para identificar a área.",
+      "Profundidade em três camadas: fundo, superfície e elevação no hover.",
+      "Tema claro e escuro com o mesmo tom; no escuro, o fundo é um marinho fechado.",
+      "Fonte do sistema e nada carregado de fora: o site precisa funcionar offline."
+    ],
+    "rules": [
+      {
+        "name": "A Regra do Marinho Único",
+        "body": "O Marinho do Grêmio é a única cor de ação e de seleção. As cores de área nunca viram botão ou link, e as cores de resposta aparecem só para dar retorno (certo, errado, atenção).",
+        "section": "colors"
+      },
+      {
+        "name": "A Regra do Mesmo Tom",
+        "body": "O tema escuro não é um cinza genérico: o fundo, as superfícies e as bordas escuras são marinhos, e a cor principal clara tem o mesmo tom do marinho do logo.",
+        "section": "colors"
+      },
+      {
+        "name": "A Regra da Fonte da Casa",
+        "body": "O site usa a fonte do aparelho. Uma fonte própria só entra se for servida pelo próprio site, para continuar funcionando sem internet.",
+        "section": "typography"
+      },
+      {
+        "name": "A Regra dos Pesos Intermediários",
+        "body": "A interface usa pesos entre 550 e 750 (550 na navegação, 600 em botões e rótulos, 650 em títulos de cartão, 750 na marca e no título dos anos) para criar hierarquia sem gritar.",
+        "section": "typography"
+      },
+      {
+        "name": "A Regra das Três Camadas",
+        "body": "Fundo, superfície e elevada. Dentro de uma superfície tudo é plano: alternativas, botões, caixas de dica e o painel \"Onde estudar mais\" não têm sombra.",
+        "section": "elevation"
+      },
+      {
+        "name": "A Regra da Elevação Merecida",
+        "body": "Só sobe de camada o que dá para clicar, e só enquanto o mouse está em cima. A mudança leva 0.15s e some para quem pediu menos movimento no aparelho.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar o Marinho do Grêmio (`#19255a`) como a única cor de ação e seleção; no escuro, o Azul Lavanda (`#a4b2f4`).",
+      "**Do** pegar cores e sombras sempre das variáveis de `assets/css/tema.css`, para os dois temas continuarem iguais.",
+      "**Do** manter o texto de leitura em colunas de até 48rem, a 1.05rem com entrelinha 1.7.",
+      "**Do** dar sombra de repouso a toda superfície de conteúdo e sombra elevada só ao que é clicável, com o mouse em cima.",
+      "**Do** manter o contraste de pelo menos 4.5:1 em todo texto, nos dois temas.",
+      "**Do** usar as cores de área só para identificar a área (faixa, bolinha, número, nome da matéria)."
+    ],
+    "donts": [
+      "**Don't** fazer o site parecer um portal escolar burocrático, com muitos menus e tabelas cinzas.",
+      "**Don't** gamificar: nada de medalhas, confete, pontos ou cores berrantes.",
+      "**Don't** usar padrões de rede social: feed infinito, curtidas ou notificações chamando atenção.",
+      "**Don't** usar as cores de área ou de resposta em botões e links.",
+      "**Don't** pôr sombra em elementos dentro de uma superfície (alternativas, botões, caixas).",
+      "**Don't** carregar fontes ou outros arquivos de fora do site: ele precisa funcionar sem internet."
+    ]
+  }
+}

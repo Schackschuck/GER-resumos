@@ -2,6 +2,7 @@
 //
 // Endereços:
 //   #/                                   início
+//   #/resumos                            todos os resumos, por ano e matéria
 //   #/ano/1                              matérias do 1º ano
 //   #/ano/1/matematica                   capítulos de Matemática do 1º ano
 //   #/ano/1/matematica/funcoes[/secao]   capítulo (e, opcionalmente, uma seção dele)
@@ -45,6 +46,7 @@ function lerEndereco() {
 function resolver({ partes, parametros }) {
   const [p0, p1, p2, p3, p4] = partes;
   if (!p0) return { chave: 'inicio', montar: paginaInicio };
+  if (p0 === 'resumos' && !p1) return { chave: 'resumos', montar: paginaResumos };
   if (p0 === 'ano' && p1 && !p2) return { chave: `ano/${p1}`, montar: () => paginaAno(p1) };
   if (p0 === 'ano' && p2 && !p3) return { chave: `ano/${p1}/${p2}`, montar: () => paginaMateria(p1, p2) };
   if (p0 === 'ano' && p3 && partes.length <= 5) {
@@ -144,6 +146,26 @@ function cartao({ rota, titulo, texto = '', extra = '', classe = '', area = '' }
     </a>`;
 }
 
+function listaCapitulos(ano, materia, area, capitulos) {
+  return `
+    <ol class="lista-capitulos">
+      ${capitulos
+        .map(
+          (cap, i) => `
+        <li>
+          <a class="capitulo-item" href="#/ano/${ano.id}/${materia.id}/${cap.id}" data-area="${escapar(area.id)}">
+            <span class="capitulo-numero" aria-hidden="true">${i + 1}</span>
+            <span>
+              <span class="cartao-titulo">${escapar(cap.titulo)}</span>
+              ${cap.descricao ? `<span class="cartao-texto">${escapar(cap.descricao)}</span>` : ''}
+            </span>
+          </a>
+        </li>`
+        )
+        .join('')}
+    </ol>`;
+}
+
 function listaTopicos(titulos, rotaBase) {
   const principais = titulos.filter((t) => t.nivel === 2);
   if (!principais.length) return '';
@@ -219,6 +241,46 @@ function textoRevisar() {
     : 'Os tópicos que você mais erra nas questões aparecem aqui.';
 }
 
+function paginaResumos() {
+  const indice = obterIndice();
+  principal.innerHTML = `
+    ${trilha([{ texto: 'Resumos' }])}
+    <header class="cabecalho-pagina">
+      <h1 tabindex="-1">Resumos</h1>
+      <p class="descricao">Todos os resumos já escritos, separados por ano e matéria.</p>
+    </header>
+    ${indice.anos
+      .map((ano) => {
+        const materias = indice.areas
+          .flatMap((area) => area.materias.map((materia) => ({ area, materia, capitulos: capitulosDe(ano.id, materia.id) })))
+          .filter((m) => m.capitulos.length);
+        const total = capitulosDe(ano.id).length;
+        return `
+      <section class="secao">
+        <h2>${escapar(ano.nome)}</h2>
+        ${
+          materias.length
+            ? `<p class="secao-texto">${plural(total, 'resumo', 'resumos')}</p>
+              ${materias
+                .map(
+                  ({ area, materia, capitulos }) => `
+                <div class="resumos-materia" data-area="${escapar(area.id)}">
+                  <h3><a href="#/ano/${ano.id}/${materia.id}">${escapar(materia.nome)}</a></h3>
+                  ${listaCapitulos(ano, materia, area, capitulos)}
+                </div>`
+                )
+                .join('')}`
+            : `<div class="vazio">
+                <p class="vazio-titulo">Ainda não tem resumos do ${escapar(ano.nome)}.</p>
+                <p>Quer ajudar a escrever? Fale com o grêmio.</p>
+              </div>`
+        }
+      </section>`;
+      })
+      .join('')}`;
+  return 'Resumos';
+}
+
 function paginaAno(idAno) {
   const ano = exigir(buscarAno(idAno));
   const indice = obterIndice();
@@ -267,22 +329,7 @@ function paginaMateria(idAno, idMateria) {
     </header>
     ${
       capitulos.length
-        ? `<ol class="lista-capitulos">
-            ${capitulos
-              .map(
-                (cap, i) => `
-              <li>
-                <a class="capitulo-item" href="#/ano/${ano.id}/${materia.id}/${cap.id}" data-area="${escapar(area.id)}">
-                  <span class="capitulo-numero" aria-hidden="true">${i + 1}</span>
-                  <span>
-                    <span class="cartao-titulo">${escapar(cap.titulo)}</span>
-                    ${cap.descricao ? `<span class="cartao-texto">${escapar(cap.descricao)}</span>` : ''}
-                  </span>
-                </a>
-              </li>`
-              )
-              .join('')}
-          </ol>`
+        ? listaCapitulos(ano, materia, area, capitulos)
         : `<div class="vazio">
             <p class="vazio-titulo">Ainda não tem resumo de ${escapar(materia.nome)} do ${escapar(ano.nome)}.</p>
             <p>Quer ajudar a escrever? Fale com o grêmio.</p>
@@ -588,12 +635,19 @@ function paginaErro(erro) {
 
 // ---------- Cabeçalho, tema e eventos gerais ----------
 
+// Parte do site de cada endereço, para marcar o link certo da navegação.
+// Anos, matérias e capítulos ficam dentro de "Resumos".
+function parteDoSite(p0) {
+  if (!p0) return 'inicio';
+  if (p0 === 'resumos' || p0 === 'ano') return 'resumos';
+  if (p0 === 'revisar') return 'revisar';
+  return null;
+}
+
 function marcarNavegacao() {
-  const [p0, p1] = lerEndereco().partes;
+  const parte = parteDoSite(lerEndereco().partes[0]);
   for (const link of document.querySelectorAll('.navegacao a')) {
-    const [a0, a1] = link.getAttribute('href').replace(/^#\/?/, '').split('/');
-    const ativo = a0 === p0 && (a1 === undefined || a1 === p1);
-    if (ativo) link.setAttribute('aria-current', 'page');
+    if (link.dataset.parte === parte) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   }
 }

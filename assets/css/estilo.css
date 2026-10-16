@@ -32,6 +32,21 @@ a:hover {
   color: var(--cor-primaria-forte);
 }
 
+::selection {
+  background: color-mix(in srgb, var(--cor-primaria) 24%, transparent);
+  color: inherit;
+}
+
+:root {
+  accent-color: var(--cor-primaria);
+  caret-color: var(--cor-primaria);
+}
+
+::placeholder {
+  color: var(--texto-suave);
+  opacity: 1;
+}
+
 :focus-visible {
   outline: 3px solid var(--cor-primaria);
   outline-offset: 2px;
@@ -86,6 +101,10 @@ h4 {
   top: 8px;
 }
 
+.pular:hover {
+  color: var(--cor-sobre-primaria);
+}
+
 /* ---------- Cabeçalho ---------- */
 
 .topo {
@@ -94,6 +113,7 @@ h4 {
   z-index: 10;
   background: var(--superficie);
   border-bottom: 1px solid var(--borda);
+  box-shadow: var(--sombra-topo);
 }
 
 .topo-linha,
@@ -126,8 +146,8 @@ h4 {
 }
 
 .marca-logo {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
 }
 
@@ -315,12 +335,13 @@ textarea:focus {
   color: var(--texto);
   text-decoration: none;
   box-shadow: var(--sombra);
-  transition: border-color 0.15s, transform 0.15s;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
 .cartao:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
   transform: translateY(-1px);
 }
 
@@ -443,18 +464,41 @@ textarea:focus {
   font-weight: 600;
 }
 
-.area > h2 {
+.area > h2,
+.resumos-materia > h3 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.area > h2::before {
+.area > h2::before,
+.resumos-materia > h3::before {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: var(--cor-area);
+}
+
+/* ---------- Página "Resumos" ---------- */
+
+.resumos-materia + .resumos-materia {
+  margin-top: 24px;
+}
+
+.resumos-materia > h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.resumos-materia > h3 a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.resumos-materia > h3 a:hover {
+  color: var(--cor-primaria);
+  text-decoration: underline;
 }
 
 /* ---------- Lista de capítulos ---------- */
@@ -479,11 +523,13 @@ textarea:focus {
   color: var(--texto);
   text-decoration: none;
   box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .capitulo-item:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .capitulo-numero {
@@ -538,6 +584,7 @@ textarea:focus {
   background: var(--superficie);
   border: 1px solid var(--borda);
   border-radius: 14px;
+  box-shadow: var(--sombra);
 }
 
 @media (min-width: 720px) {
@@ -798,6 +845,7 @@ textarea:focus {
   background: var(--superficie);
   border: 1px solid var(--borda);
   border-radius: 12px;
+  box-shadow: var(--sombra);
   break-inside: avoid;
 }
 
@@ -1204,6 +1252,7 @@ textarea:focus {
   border: 1px solid var(--borda);
   border-left: 4px solid var(--cor-area, var(--erro));
   border-radius: 12px;
+  box-shadow: var(--sombra);
 }
 
 .lista-revisar-grande .lista-revisar-info::before {
@@ -1235,6 +1284,8 @@ textarea:focus {
   color: var(--texto);
   font-weight: 600;
   text-decoration: none;
+  box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .vizinho span {
@@ -1246,6 +1297,7 @@ textarea:focus {
 .vizinho:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .vizinho-proximo {
@@ -1278,11 +1330,14 @@ textarea:focus {
   border-radius: 12px;
   color: var(--texto);
   text-decoration: none;
+  box-shadow: var(--sombra);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .resultado-busca:hover {
   color: var(--texto);
   border-color: var(--cor-primaria);
+  box-shadow: var(--sombra-elevada);
 }
 
 .resultado-busca-onde {
