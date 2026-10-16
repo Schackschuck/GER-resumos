@@ -464,18 +464,41 @@ textarea:focus {
   font-weight: 600;
 }
 
-.area > h2 {
+.area > h2,
+.resumos-materia > h3 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.area > h2::before {
+.area > h2::before,
+.resumos-materia > h3::before {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: var(--cor-area);
+}
+
+/* ---------- Página "Resumos" ---------- */
+
+.resumos-materia + .resumos-materia {
+  margin-top: 24px;
+}
+
+.resumos-materia > h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.resumos-materia > h3 a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.resumos-materia > h3 a:hover {
+  color: var(--cor-primaria);
+  text-decoration: underline;
 }
 
 /* ---------- Lista de capítulos ---------- */

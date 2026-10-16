@@ -7,6 +7,7 @@ Site de resumos e questões para o Ensino Médio, feito pelo Grêmio Estudantil.
 ## O que o site tem
 
 - **Navegação por ano e área:** 1º, 2º e 3º ano → Matemática, Ciências da Natureza (Biologia, Química, Física), Linguagens (Língua Portuguesa, Redação, Literatura) e Ciências Humanas (História, Geografia, Sociologia, Filosofia).
+- **Página Resumos:** todos os capítulos já escritos numa página só, separados por ano e matéria. A barra do topo tem só Início, Resumos e Onde estudar mais; a folha de fórmulas e as páginas "Como é o ano" ficam na página inicial.
 - **Capítulos com tópicos principais no início:** uma lista com links para cada seção, gerada a partir dos títulos, e os pontos-chave para revisar rápido.
 - **Vídeos junto com o texto** (YouTube).
 - **Questões objetivas:** o aluno clica numa alternativa e vê na hora se acertou, com a explicação.
